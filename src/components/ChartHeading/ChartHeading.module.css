@@ -1,0 +1,56 @@
+.card-balance {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(10, 79%, 65%);
+  width: 24rem;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+.card-balance-content {
+  color: hsl(33, 100%, 98%);
+}
+
+.card-balance-content p {
+  font-size: 0.9rem;
+  margin: 0;
+  margin-bottom: 0.7rem;
+}
+
+.card-design {
+  display: flex;
+  padding: 10px 0;
+  position: relative;
+  width: 4rem;
+}
+
+.card-design .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.card-design .circle.outline {
+  border: 2px solid #fff;
+  z-index: 2;
+}
+
+.card-design .circle.solid {
+  width: 44px;
+  height: 44px;
+  background-color: hsl(25, 47%, 15%);
+  right: -0.1rem;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 450px) {
+  .card-balance {
+    width: 19rem;
+  }
+
+  .card-balance-content p {
+    font-size: 0.8rem;
+  }
+}
