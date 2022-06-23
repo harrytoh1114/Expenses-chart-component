@@ -6,7 +6,6 @@ import styles from "./ChartBody.module.css";
 
 const ChartBody = () => {
   const [barheight, setBarHeight] = useState([]);
-  const [totalAmount, setTotalAmount] = useState(0);
   const [showUsage, setShowUsage] = useState([]);
 
   useEffect(() => {
@@ -38,7 +37,6 @@ const ChartBody = () => {
           default:
             break;
         }
-        setTotalAmount((prevState) => prevState + item.amount);
       });
       setBarHeight(height);
     };
@@ -81,7 +79,7 @@ const ChartBody = () => {
       <div className={styles["card-total"]}>
         <div className={styles["card-total-detials"]}>
           <p>Total this month</p>
-          <h2>${totalAmount}</h2>
+          <h2>$478.33</h2>
         </div>
         <div className={styles.percentage}>
           <p className={styles.percent}>+2.4%</p>
